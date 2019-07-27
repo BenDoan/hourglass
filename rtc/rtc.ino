@@ -35,9 +35,10 @@ void loop () {
     Serial.print(now.minute(), DEC);
     Serial.print(':');
     Serial.print(now.second(), DEC);
+    Serial.print(" -- ");
+    Serial.print(now.unixtime(), DEC);
     Serial.println();
 
     Serial.println();
     delay(3000);
 }
-
